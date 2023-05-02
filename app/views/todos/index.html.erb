@@ -1,2 +1,10 @@
-<h1>Todos</h1>
+<h1>TodoList</h1>
 <p>This page will list all the todos!</p>
+
+<ul>
+    <% @todos.each do |todo| %>
+        <li>
+            <%= link_to todo.title, todo %>
+        </li>
+    <% end %>
+</ul>
